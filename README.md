@@ -32,7 +32,9 @@ Lowset number of Sales by outlet size = High ($248.99K)
 
 [2] Average Ratings
 a) Meat - 4.0/5
+
 b) Fruits & Vegetables - 3.91/5
+
 c) Hpousehold - 3.95/5
 d) Health & Hygiene - 3.93/5
 e) Soft Drinks - 3.89/5
