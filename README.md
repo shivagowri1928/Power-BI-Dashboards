@@ -7,63 +7,14 @@ This project will facilitate data-driven decision-making by visualizing key metr
 
 The project will empower stakeholders with valuable insights into sales performance, enabling informed decision-making and strategic planning.​
 
-Steps followed
-Step 1 : Load data into Power BI Desktop, dataset is a csv file.
 
-Step 2 : Open power query editor & in view tab under Data preview section, check "column distribution", "column quality" & "column profile" options.
-
-Step 3 : Extract, clean, and transform data from various sources to ensure accuracy and consistency.​
-
-Step 4 : Generate useful and insightful KPIs according to the business requirement.​
-
-Step 5 : Build the Power BI dashboard with interactive features and visualizations based on the defined requirements.
-
-step 6 : Create a matrics to insert a proper slicer for whole dashboard that includes all KPIs, charts and many more
-
-for creating new matrix following DAX expression was written;
-
-   Metrics = {
+Metrics = {
 ("Total Sales", NAMEOF('BlinkIT Grocery Data'[Total Sales]), 0),
 ("Avg Sales", NAMEOF('BlinkIT Grocery Data'[Avg Sales]), 1),
 ("Avg Rating", NAMEOF('BlinkIT Grocery Data'[Avg Rating]), 2),
 ("No of Items", NAMEOF('BlinkIT Grocery Data'[No of Items]), 3)
 }
 
-Snap of new calculated column ,
-
-Screenshot (1)
-
-Step 7 : New measure was created to find total revenue.
-Following DAX expression was written for the same,
-
-    Total Sales = SUM('BlinkIT Grocery Data'[Sales])
-A card visual was used to represent count of customers.
-
-Screenshot (4)
-
-Step 8 : New measure was created to find average sales,
-Following DAX expression was written for the same,
-
-     Avg Sales = AVERAGE('BlinkIT Grocery Data'[Sales])
-A card visual was used to represent this value.
-
-Screenshot (5)
-
-Step 9 : New measure was created to find out average rating per item.
-Following DAX expression was written to find total distance,
-
-     Avg Rating = AVERAGE('BlinkIT Grocery Data'[Rating])
-A card visual was used to represent this average rating.
-
-Screenshot (6)
-
-Step 10 : New measure was created to find out total number of items
-
-  No of Items = COUNTROWS('BlinkIT Grocery Data')
-Screenshot (7)
-
-Snapshot of Dashboard (Power BI Service)
-Screenshot (8)
 
 Insights
 A single page report was created on Power BI Desktop & it was then published to Power BI Service.
